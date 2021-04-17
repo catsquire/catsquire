@@ -1,0 +1,18 @@
+{
+  "name": "squire",
+  "description": "Bot para ayuda del juego CW",
+  "keywords": [
+  ],
+  "repository": "https://github.com/catsquire/catsquire/",
+  "success_url": "",
+  "website": "https://github.com/catsquire/catsquire",
+  "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
