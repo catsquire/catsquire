@@ -36,7 +36,6 @@ with TelegramClient("asd", api_id, api_hash) as client:
         if re.search('Withdrawing',msg) or re.search('Not enough items on guild stock',msg) or re.search('invalid action',msg) or re.search('You are too busy',msg):
             await event.mark_read()
             await client.send_message(group, event.raw_text)
-            
 
 
     client.run_until_disconnected()
